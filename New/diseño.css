@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color:rgb(255, 255, 255);
+    min-height: 100vh;
+    overflow-x: hidden;
+
+}
+header {
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index: 100;
+    background-color: #fffdfd;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+.First {
+    align-items: center;
+    height: 80vh;
+    margin-bottom: 10%;
+    padding-bottom: 10%;
+}
+
+
+.Intro {
+    box-sizing: content-box;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: left;
+}
+
+.Intro h1 {
+    text-align: left;
+    margin-top: 14%;
+    margin-left: 10%;
+    font-weight: 600;
+    font-size: 70px;
+}
+
+.Intro img {
+    position: absolute;
+    width: 490px;
+    height: 509.5px;
+    left: 50%;
+    top: 18%;
+}
+
+.navigation {
+    right:0;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    overflow-x: hidden;
+    transform: translateY(-20%);
+    text-align: center;
+}
+
+.navigation a {
+    position: flex;
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin: 0 10px;
+    font-weight: 600;
+    margin-bottom: x;
+    position: relative;
+    display: inline-block;
+    flex-direction:row;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: #6E5D57;
+    color: #ffffff;
+
+}
+
+.navigation:hover {
+    background-color: rgba(206, 206, 206, 0.5); 
+    overflow-x: visible;
+  }
+
+.block {
+    height: 4499px;
+    background-image:url(/AbstractShapes.png) ;
+    background-size: cover;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.Lefty {
+    margin-left: 8%;
+}
+
+.Lefty h1{
+    font-weight: 700;
+}
+
+.Lefty h2{
+    font-weight: 500;
+    font-size: medium;
+    margin-right: 30%;
+}
+
+.Box {
+    height: 80vh;
+    width: 100%;
+}
+
+.Righty {
+    margin-left: 47%;
+    margin-right: 10%;
+    text-align: left;
+}
+
+.Righty h1{
+    font-weight: 700;
+}
+
+.Righty h2{
+    font-weight: 500;
+    font-size: medium;
+}
+
+#dos {
+    margin-top: 30%;
+}
+
+#tres {
+    margin-top: 10%;
+    margin-right: 60%;
+}
+
+.Centry {
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+}
+
+.Centry h1{
+    font-weight: 700;
+}
+
+.Centry h2{
+    font-weight: 500;
+    font-size: medium;
+}
+
+
+.site-footer
+{
+  background-color:#6E5D57;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#fffdfd;
+}
+.site-footer hr
+{
+  border-top-color:#626262;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#ffffff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#cac9c9
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+}
