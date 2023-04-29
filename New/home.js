@@ -1,9 +1,17 @@
-var images = document.querySelectorAll('.slider-image');
-var current = 0;
-var interval = setInterval(nextSlide, 5000);
+var slideIndex = 1;
+showSlides(slideIndex);
 
-function nextSlide() {
-  images[current].style.opacity = 0;
-  current = (current + 1) % images.length;
-  images[current].style.opacity = 1;
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slides")[0].getElementsByTagName("ul")[0].getElementsByTagName("li");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
 }
